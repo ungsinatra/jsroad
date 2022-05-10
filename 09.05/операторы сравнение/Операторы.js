@@ -89,12 +89,12 @@ console.log(Number.isFinite(Infinity))//False  исключение
 
 // ---------------------------------------------------------------- isFinite()
 
-console.log(isFinite('12'))//TRUE так как.метод просто isFinite() сначало переобразует в число потом выдает число
+console.log(isFinite('12'))//TRUE так как.метод гл isFinite() сначало переобразует в число потом выдает число
 console.log(isFinite(false))//TRUE так как.метод просто isFinite() сначало переобразует в число потом выдает число
 console.log(isFinite(true))//TRUE так как.метод просто isFinite() сначало переобразует в число потом выдает число
 
 // ---------------------------------------------------------------------number.IsNaN()
-console.log(Number.isNaN(12))//fale
+console.log(Number.isNaN(12))//false
 console.log(Number.isNaN('1231')) //false
 console.log(Number.isNaN(true)) //false
 console.log(Number.isNaN(NaN)) //true
