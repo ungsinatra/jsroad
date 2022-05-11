@@ -97,71 +97,97 @@ function filterRange(arr, a, b) {
       return el;
     }
   });
-  newArr = newArr.sort((a, b) => {//sort() сортировака по возр
+  newArr = newArr.sort((a, b) => {
+    //sort() сортировака по возр
     return a - b;
   });
   return newArr;
 }
 console.log(filterRange([5, 3, 8, 1], 1, 4));
 
-
 // ------------------------------------------------------------------------------------
 
-function copyStarted(arr){
-	let newArr = arr.slice().sort();//copy and sort()
-	console.log(arr)
-	return newArr
-
+function copyStarted(arr) {
+  let newArr = arr.slice().sort(); //copy and sort()
+  console.log(arr);
+  return newArr;
 }
-console.log(copyStarted( ["HTML", "JavaScript", "CSS"]))
-
+console.log(copyStarted(["HTML", "JavaScript", "CSS"]));
 
 // ----------------------------------------------------------------------------------
-
 
 let vasya = { name: "Вася", age: 25 };
 let petya = { name: "Петя", age: 30 };
 let masha = { name: "Маша", age: 28 };
 
-let users = [ vasya, petya, masha ];
+let users = [vasya, petya, masha];
 
-
-let names = users.map(el=>{//map()
-	return el.name
-		
-})
-console.log(names)
-
+let names = users.map((el) => {
+  //map()
+  return el.name;
+});
+console.log(names);
 
 //------------------------------------------------------------------------------------
 let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
 let petya = { name: "Петя", surname: "Иванов", id: 2 };
 let masha = { name: "Маша", surname: "Петрова", id: 3 };
 
-let users = [ vasya, petya, masha ];
+let users = [vasya, petya, masha];
 
+let usersMapped = users.map((el) => ({
+  fullName: `${el.name} ${el.surname}`,
+  id: `${el.id}`,
+}));
 
-let usersMapped = users.map(el=>({
-	fullName:`${el.name} ${el.surname}`,
-	id:`${el.id}`
-
-}))
-
-console.log(usersMapped)
-
+console.log(usersMapped);
 
 // ---------------------------------------------------------------------------
 let vasya = { name: "Вася", age: 25 };
 let petya = { name: "Петя", age: 30 };
 let masha = { name: "Маша", age: 28 };
 
-let arr = [ vasya, petya, masha ];
+let arr = [vasya, petya, masha];
 
-function sortByAge(arr){
-		arr.sort((a,b)=>{//sort()
-		return 	(a.age>b.age)?1:-1
-
-		})
-		return arr
+function sortByAge(arr) {
+  arr.sort((a, b) => {
+    //sort()
+    return a.age > b.age ? 1 : -1;
+  });
+  return arr;
 }
-console.log(sortByAge(arr))
+console.log(sortByAge(arr));
+
+// object------------------------------------------------------------------------
+let salaries = {
+  John: 100,
+  Pete: 300,
+  Mary: 250,
+};
+
+function getSumSalary(object) {
+  let sum = 0;
+  Object.values(object).map((el) => {
+    //Object.values()
+    return (sum += el);
+  });
+  return sum;
+}
+
+console.log(getSumSalary(salaries)); //650
+
+// ---------------------------------------------------------------
+function getCount(obj) {
+  let sum1 = 0;
+  Object.entries(obj).map((el, index) => {
+    return (sum1 += 1);
+  });
+  return newObj1;
+}
+
+let user = {
+  name: "John",
+  age: 30,
+};
+
+console.log(getCount(user));
