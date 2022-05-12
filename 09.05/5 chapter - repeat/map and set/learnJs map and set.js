@@ -47,5 +47,18 @@ for(let all of newMap.entries()){
 // map.set(dataObject, 'value for dataObject')
 // map.set(sameObject, 'value for sameObject')
 // console.log(map.get(dataObject))
+// ----------------------------------------------------
 
+function aclean(arr) {
+  let map = new Map();
+  for (let i of arr) {
+    let str = i.toLowerCase().split("").sort().join("");
+	console.log(str)
+    map.set(str, i);
+  }
+  console.log(map)
+  return Array.from(map);
+}
 
+console.log(
+  aclean(["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"])
