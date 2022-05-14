@@ -61,4 +61,4 @@ function aclean(arr) {
 }
 
 console.log(
-  aclean(["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"])
+  aclean(["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"]))
