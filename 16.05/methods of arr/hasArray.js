@@ -1,11 +1,9 @@
 
 function hasArrys(arr){
-	let res;
-		arr.find(el=>{
+	let res=arr.some(el=>{
 		if(Array.isArray(el)){
-			return res = true
+			return el
 		}
-		return res = false
 	})
 	return res 
 }
