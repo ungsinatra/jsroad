@@ -6,4 +6,4 @@ function moveToStart(arr,n){
 	return res
 }
 
-console.log(moveToStart([1,2,3,4,5],4))
+console.log(moveToStart([1,2,3,4,5],3))

@@ -20,16 +20,15 @@ let obj = {
   name: "asda",
   age:12,
   toString() {
-    return `{name: "${this.name}"}`;
+    return this.name;
   },
   valueOf(){
 	  return this.age
   }
 };
 
-let newStr = 12;
-let res = obj.age==newStr
-console.log(res);
+let newStr = 'asda';
+console.log(obj==newStr);
 
 
 
