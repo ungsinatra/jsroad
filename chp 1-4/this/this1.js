@@ -1,25 +1,35 @@
 
 'use strict'
 
-// function getWindow(){
-// 	console.log(this)
+function getWindow(){
+	console.log(this)
 
-// }
-// getWindow()//undefined use strict
+}
+getWindow()//undefined use strict
 
-// function getThis(){
-// 	console.log(this.name)
+function getThis(){
+	console.log(this.name)
+	const fcExpress= function(that){
+		console.log(that.name)
+		
+	}
+	fcExpress(this);
+	let arrow=()=>{
+		console.log(this.age)
+	}
+	arrow();
+}
 
-// }
 
 
+const obj = {
+	age:123,
+	getThis:getThis,
+	name:'sardor'
 
-// const obj = {
-// 	sayHello:getThis,
-// 	name:'sardor'
+}
+obj.getThis()
 
-// }
-// console.log(obj.sayHello())
 
 
 // function getName(){
@@ -131,26 +141,34 @@
 // // newObj.getName()
 
 
-const arrow = ()=>{
-	console.log(this.age)
+// const arrow = ()=>{
+// 	console.log(this.age)
 
-}
+// }
 
-function fcGetAge(){
-	console.log(this.age)
-	function newArrowFc(that){
-		console.log(that.person)
-	}
-	newArrowFc(this);
-}
+// function fcGetAge(){
+// 	console.log(this.age)
+// 	function newArrowFc(that){
+// 		console.log(that.person)
+// 	}
+// 	newArrowFc(this);
+// }
 
-let newboj = {
-	age:12,
-	person:'men',
-	getAge:arrow
-}
+// let newboj = {
+// 	arrwMe:()=>{
+// 		console.log(this.age)
 
-newboj.getAge()//undefined так как будет без use strict window.name()- такого нету да и без use strict тоже не было б 
+// 	},
+// 	age:12,
+// 	person:'men',
+// 	getAge:arrow
+// }
 
-newboj.getALLobj = fcGetAge;
-newboj.getALLobj();
+// newboj.arrwMe()//undefined
+// newboj.getAge()//undefined так как будет без use strict window.name()- такого нету да и без use strict тоже не было б 
+
+// newboj.getALLobj = fcGetAge;
+// newboj.getALLobj();
+
+
+
