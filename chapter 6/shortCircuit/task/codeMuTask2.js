@@ -30,3 +30,25 @@ console.log(ggg((()=> 3 ),()=>4))
 
 
 
+
+// Дана функция ggg. Она требует первым параметром число, вторым функцию, которая возводит в квадрат, а третьим параметром функцию, которая возводит в куб. Эти функции есть как Function Declaration - kvadrat, kub. Пусть функция ggg вернет сумму квадрата и куба числа
+
+/*
+function square(number){
+	return number**2
+}
+
+function cube(number){
+	return number**3
+
+}
+
+function ggg(num,func1,func2){
+
+	const squareVal = func1(num);
+	const cubeResVal = func2(num)
+	let tottal = squareVal+cubeResVal
+	return tottal;
+}
+console.log(ggg(2,square,cube));
+*/
