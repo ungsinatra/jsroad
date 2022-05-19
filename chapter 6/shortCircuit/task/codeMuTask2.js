@@ -50,5 +50,70 @@ function ggg(num,func1,func2){
 	let tottal = squareVal+cubeResVal
 	return tottal;
 }
-console.log(ggg(2,square,cube));
+console.log(ggg(2,square,cube));//12
+*/
+
+
+// Сделайте функцию each, которая первым параметром принимает массив, а вторым - функцию, которая применится к каждому элементу массива. Функция each должна вернуть измененный массив
+
+/*
+function each(arr,func){
+	return arr.filter(func())
+
+}
+
+function fcFillter(element){
+	return (element)=>element>3;
+
+}
+
+console.log(each([1,2,3,4,5,6,7],fcFillter))//[4,5,6,7]
+*/
+
+
+
+// Сделайте функцию each, которая первым параметром принимает массив, а вторым - массив функций, которые по очереди применятся к каждому элементу массива: к первому элементу массива - первая функция, ко второму - вторая и так далее пока функции в массиве не закончатся, после этого возьмется первая функция, вторая и так далее по кругу.
+
+/*
+function each(arr,arr2){
+	let result =[]	
+	for(let char=0;char<arr.length;char++){
+		let el = arr[char];
+		let fc = arr2[char]
+		let currentVal = fc(el)();
+		result.push(currentVal)
+	
+	}
+	
+	return result;
+}
+
+function mapFc(arr){
+	return ()=>{
+		return arr*1
+	}
+
+}
+function mapFc2(element){
+	return ()=>element*3;
+
+}
+function mapFc3(arr){
+	return ()=>{
+		return arr*3
+	}
+
+}
+function mapFc4(arr){
+	return ()=>{
+		return arr*4
+	}
+
+}
+
+let array = [mapFc,mapFc2,mapFc3,mapFc4];
+let firstArr = [1,2,3,4];
+
+
+console.log(each(firstArr,array))
 */
