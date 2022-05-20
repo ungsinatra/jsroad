@@ -19,6 +19,11 @@ body{
 	
 }
 
+.button:hover{
+	opacity: 60%;
+	transition:.2s all ease;
+
+}
 .first{
 	background-color: rgb(243, 130, 24);
 	color: white;
