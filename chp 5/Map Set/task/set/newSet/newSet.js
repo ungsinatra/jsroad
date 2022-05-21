@@ -235,7 +235,6 @@ for(let char of newMap.values()){
 Пусть даны абзацы. Переберите эти абзацы циклом и создайте коллекцию Map, ключами в которой будут абзацы, а значением - их порядковый номер на странице. Сделайте так, чтобы по клику на любой абзац ему в конец записывался его порядковый номер.
 
 
-*/
 
 
 let p1 = document.querySelectorAll('p');
@@ -248,12 +247,14 @@ for(let char of p1){
 	for(let el of map.values()){
 		console.log(el)
 		char.addEventListener('click',()=>{
-			char.textContent = el
+			char.textContent += el
 		
 		})
 	}
-	
+
 }
 console.log(map)
 
 
+
+*/
