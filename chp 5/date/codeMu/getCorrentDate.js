@@ -6,7 +6,7 @@ function getCorrentDate(){
 	let month = addZero(date.getMonth());
 	let day = addZero(date.getDate());
 
-	return `${date.getHours()}.${date.getMinutes()}.${date.getSeconds()} ${day}.${month}.${year}`
+	return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${day}.${month}.${year}`
 
 }
 
