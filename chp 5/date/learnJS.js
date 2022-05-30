@@ -97,5 +97,17 @@ console.log(getSecondsToday());
 Создайте функцию getSecondsToTomorrow(), возвращающую количество секунд до завтрашней даты.
 
 Например, если сейчас 23:00, то:
-*/
 
+
+
+function getSecondsToTomorrow(){
+	let nowDate = new Date();
+	let tomorrowDate = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate()+1);
+	let res = Math.round((tomorrowDate.getTime()- nowDate.getTime())/1000)
+	return res
+
+
+}
+console.log(getSecondsToTomorrow());
+
+*/
