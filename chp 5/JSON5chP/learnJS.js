@@ -29,9 +29,7 @@ meetup.self = meetup;
 
 
 let res =  JSON.stringify(meetup, function replacer(key, value) {
-  if(value =='meetup'){
-    undefined
-  }
+  return (key!="" && value ==meetup)? undefined:value
 });
 
 console.log(res)
