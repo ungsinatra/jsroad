@@ -63,3 +63,12 @@ let newArr21  = [...str];
 console.log(newArr21)
 
 
+
+"use strict"
+function getError(...sss){
+	return sss
+
+}
+console.log(getError(1,2,3,4))
+
+
