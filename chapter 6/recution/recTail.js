@@ -47,29 +47,6 @@ console.log(fubTail(7))
 //-----------------------------------------
 
 
-function sequenSum(a, b) {
-	if (a == b) {
-	  return a;
-	} else if (a > b) {
-	  return NaN;
-	}
-	return b + sequenSum(a, b - 1);
-  }
-  
-  console.log(sequenSum(1, 5));
 
 
-function sequenSumTail(a,b,corrent = 0){
-	if(a==b){
-		return corrent
-	}
-	else if(a>b){
-		return NaN
 
-	}
-	return b+sequenSumTail(a,b-1,corrent+1)
-
-}
-
-
-console.log(sequenSumTail(1,5))
