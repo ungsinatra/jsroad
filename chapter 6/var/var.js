@@ -1,15 +1,15 @@
-/*
+
 function getVar(){
 	console.log(getVar);
 	//undefined
 	var getVar;
 	getVar = 'я VAR'
-
+	console.log(getVar)// 'я var'
 }
 getVar()
-*/
 
-/*
+
+
 function getVar(){
 	
 	getVar = 'я VAR'
@@ -18,8 +18,8 @@ function getVar(){
 
 }
 getVar()
-*/
-/*
+
+
 
 
 if(true){
@@ -27,16 +27,16 @@ if(true){
 }
 
 console.log(num)//15
-*/
 
-/*
+
+
 var number = 15;
 console.log(number)//15
 var number = 20;
 console.log(number)//20
 
-*/
-/*
+
+
 let speed  = 15;
 var straph = false
  
@@ -45,9 +45,9 @@ var straph = false
  }
  console.log(straph)//true
 
- */
+ 
 
-/*
+
 function sayhi() {
   phrase = "Hi";
 
@@ -62,9 +62,9 @@ function sayhi() {
 }
 
 sayhi();
-*/
 
 
+'use strict'
 function sayhi() {
 	
 
@@ -79,3 +79,38 @@ function sayhi() {
   }
   
   sayhi();
+
+
+
+console.log(num)
+
+
+
+var show1 = 'show'
+function show(){
+	show1 = 'non'
+	
+
+}
+
+show()
+console.log(show1)//'non'
+
+'use strict'
+
+function nonVar(){
+	secondName = 'hitler';
+	console.log(secondName)
+}
+nonVar()
+console.log(secondName)//hitler
+
+console.log(gavno)//undefined
+
+var gavno  = 'gavno';
+console.log(gavno)//govno
+var gavno = 'negovno'
+
+console.log(gavno)//negovno
+
+
