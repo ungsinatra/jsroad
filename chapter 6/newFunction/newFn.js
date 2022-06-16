@@ -1,14 +1,29 @@
 
 
-/*
-const getNew = new Function('a,b','return a+b')
-console.log(getNew(13,12))//25
-*/
+const fn  = new Function('a,b','return a+b');
+
+console.log(fn(5,3))//8 
+
+let number = 15// global
+
+function noGlbal(){
+	var num = 15 
+
+	const newFn = new Function('a,b','return a+b')
+	return newFn
+
+}
+
+console.log(noGlbal()(number,14))//29
 
 
-/*
-const newFc = new Function('console.log("Привет")')
-console.log(newFc())//привет 
-*/
 
 
+
+function getNumber(){
+	let number = 14
+	const show = new Function('console.log(number)')
+	show()
+}
+
+getNumber()//number is not defined
