@@ -38,7 +38,7 @@ function sum(num) {
 
   return next;
 }
-console.log(sum(1)(2)); // 1 + 2
+console.log(+sum(1)(2)); // 1 + 2
 // sum(1)(2)(3) == 6; // 1 + 2 + 3
 // sum(5)(-1)(2) == 6
 // sum(6)(-1)(-2)(-3) == 0
