@@ -23,23 +23,22 @@ counter.decrease(); // уменьшить значение счётчика на
 console.log(counter()); // 9
 console.log(counter()); // 10
 
-
-
 ///--------------------------------
 
-const sum = function getSum(num){
-	let number = num
-	getSum.valueOf = function(that){
-		return that.number
+function sum(num) {
+  let corrent = num;
+  function next(second) {
+    corrent += second;
+    return next;
+  }
 
-	}
-	return getSum.valueOf(this)
+  next.toString = (el) => {
+    return corrent;
+  };
+
+  return next;
 }
-
-let resCounter;
-resCounter = resCounter + sum(1)(2)(5)
-console.log(resCounter)
-// sum(1)(2) == 3; // 1 + 2
+console.log(sum(1)(2)); // 1 + 2
 // sum(1)(2)(3) == 6; // 1 + 2 + 3
 // sum(5)(-1)(2) == 6
 // sum(6)(-1)(-2)(-3) == 0
