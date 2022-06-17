@@ -38,3 +38,42 @@ let i = 1;
 setInterval(function() {
   func(i);
 }, 100);
+
+
+
+
+setTimeout(() => {
+	console.log('ssss')
+}, 10000);
+
+
+
+function getRes(a,b){
+	console.log(a+b)
+
+}
+
+ let stop = setTimeout(getRes,1000,20,20);
+ clearTimeout(stop)
+ console.log(+stop)
+
+
+
+
+
+ let counter = 0;
+const interval = setInterval(()=>{
+	console.log(counter+=1)
+},500)
+
+
+setTimeout(()=>{
+	clearInterval(interval);
+	console.log('stop')
+
+},5000)
+
+
+
+
+
