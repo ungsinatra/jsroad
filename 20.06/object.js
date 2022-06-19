@@ -96,7 +96,7 @@ let newArr = [1,2,3,4];
 
 let {first,second,...all} = newArr
 let [...rest] = obj
-console.log(first)
+console.log(all)//
 console.log(rest)
 
 
@@ -106,3 +106,10 @@ console.log(rest)
 
 
 
+function getSum(a,b){
+	return a+b
+	+30-
+	'-;0                            bv'
+}
+
+console.log(getSum(5,6))
