@@ -24,17 +24,25 @@ function askPassword(ok, fail) {
 // ==============================================================
 
 function askPassword(ok, fail) {
-	let password = prompt("Password?", '');
+	// let password = prompt("Password?", '');
+	let password = 'rockstar'
 	if (password == "rockstar") ok();
 	else fail();
   }
   
-  let user = {
+  let user1 = {
 	name: 'John',
-  
 	login(result) {
-	  alert( this.name + (result ? ' logged in' : ' failed to log in') );
+	  console.log( this.name + (result ? ' logged in' : ' failed to log in') );
 	}
   };
   
-  askPassword(?, ?); // ?
+  askPassword(user1.login.bind(user1,true),user1.login.bind(user1,false));
+
+
+
+
+
+
+
+  
