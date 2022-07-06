@@ -1,11 +1,10 @@
 const car = {
-    _name:null,
     set name(name){
         this._name = name
         
     },
     get name(){
-        console.log(this._name)
+        return this._name
     }, 
     start() {
         this.status = true;
@@ -68,5 +67,12 @@ const tesla  = {
     
 }
 
-tesla.name = tesla 
-console.log(tesla.name)
+tesla.name = 'tesla' 
+// console.log(tesla.name)
+
+console.log(tesla.start())
+console.log(tesla.drive())
+
+
+
+console.log(tesla.stop())
