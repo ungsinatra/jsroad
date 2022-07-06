@@ -52,7 +52,7 @@ console.log(bed.glasses)// 1
 
 */
 
-
+/*
 
 const homster  = {
     stomach : [],
@@ -97,3 +97,35 @@ lazyH.eat('pieapple')
 console.log(lazyH.stomach)//pieapple
 
 console.log(homster.stomach)
+console.log(speedyH)
+
+*/
+//=========================================
+
+const user = {
+    name:'Alice',
+    secondName:'Cooper',
+
+    set fullName(name){
+        [this.name,this.secondName] = name.split(' ')
+    },
+    get fullName(){
+        return `NAME:${this.name}\nSECONDNAME:${this.secondName}`
+    },
+
+}
+
+
+
+const user2 = {
+    __proto__:user,
+}
+
+
+user2.fullName  = 'Sardor Mamyrov'
+
+
+
+
+
+console.log(user2.fullName)
