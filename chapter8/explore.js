@@ -1,4 +1,4 @@
-/*
+
 const animal ={
     jump:null,
     wolk(){
@@ -22,11 +22,10 @@ const robbit = {
 }
 robbit.sleep();
 robbit.wolk()
-*/
+
 // ========================
 
 
-/*
 const head = {
     glasses :1,
 }
@@ -50,9 +49,8 @@ const pocket = {
 console.log(pocket.pen)// 1
 console.log(bed.glasses)// 1
 
-*/
 
-/*
+
 
 const homster  = {
     stomach : [],
