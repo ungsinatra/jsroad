@@ -100,4 +100,5 @@ class Mircowave extends HungryPerson{
 
 const test = new Mircowave('asdasd')
 test.on()
-test.stop()
+test.start();
+test.start();
